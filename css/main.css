@@ -1,8 +1,17 @@
 
 .active-link {
-    color: rgb(87, 7, 7);
+    color: rgb(143, 6, 6);
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-link{
+    color: rgb(87, 7, 7);
+    font-weight: bold;
+}
+.nav-logo{
+    color: rgb(87, 7, 7);
+    font-weight: bold;
+    font-size: 20px;
 }
 
   .section-showcase  {
@@ -31,31 +40,18 @@
       width: 0;
       height: 100%;
      -webkit-text-stroke: 2px;
-     animation: animate 10s linear infinite;
+     animation: data-text 10s linear infinite;
   }
  
-  @keyframes animate {
+  @keyframes data-text {
       0%, 20%, 100%
       {
           width: 0;
       }
       70%, 90%
       {
-          width: 80%;
+          width: 100%;
       }
-  }
-
-  .section-icon {
-      margin-top: 20px;
-      color:black;
-      border-top:red ;
-      border-bottom: red;
-  }
-
-  .section-welcome {
-      margin-top: 20px;
-      border-top: red 5px;
-      border-bottom: red 5px;
   }
 
   .line {
@@ -191,7 +187,8 @@
     background-color:rgb(87, 7, 7); 
     font-weight: bolder;
     font-size: large;
-    color: rgb(10, 10, 10);
+    color: rgb(160, 157, 157);
+    font-style: italic;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -204,4 +201,37 @@
     0% {opacity: 0;}
     50%{opacity: .5;}
     100%{opacity: 1;}
+}
+
+
+#slider {
+    margin:auto;
+    width: auto;
+    height: 800px;
+    margin-top:20px;
+}
+#slider a img {
+    padding: 10px;
+    border: 1px solid black ;
+    background: rgb(87, 7, 7); 
+    width: 800px;
+    height: 400px;
+}
+#slider a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 4s;
+    animation-duration: 2s ;
+    z-index:20;
+}
+#slider a:nth-of-type(2) {
+    z-index:10;
+}
+
+#slider a:nth-of-type(n+3) {
+    display: none;
+}
+
+@keyframes fader {
+    from {opacity: 1.0;}
+    to {opacity: 0.0;}
 }
