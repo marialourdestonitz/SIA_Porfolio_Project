@@ -245,40 +245,40 @@
     </div>
   </div>
 </section>
-
 <!--Section: Gallery-->
 <section class="section section-gallery center">
   <div class="container">
-    <div class="line"></div>
-    <div class="row">
-      <div class="col s12">
+    <div class="line">
+      </div>
       <h2 class="caption1">Gallery</h2>
-      <div id="slider">
-        <a href="1"><img src="img/repair.jpg" alt=""></a>
-        <a href="2"><img src="img/gal2.jpg" alt=""></a>
-        <a href="4"><img src="img/gal3.jpg" alt=""></a>
-        <a href="5"><img src="img/motorpart.jpg" alt=""></a>
-        <a href="6"><img src="img/Dunlop.jpg" alt=""></a>
-        <a href="7"><img src="img/outlast.jpg" alt=""></a>
+      <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="img/repair.jpg" alt=""> 
+            </li>
+            <li>
+             <img src="img/gal1.jpg" alt="">
+         </li>    
+         <li>
+             <img src="img/gal2.jpg" alt="">
+         </li>  
+         <li>
+             <img src="img/gal3.jpg" alt="">
+         </li>    
+         <li>
+             <img src="img/Carpaint.jpg" alt="">
+         </li>  
+         <li>
+          <img src="img/motorpart.jpg" alt="">
+      </li>   
+      <li>
+        <img src="img/Dunlop.jpg" alt="">
+    </li>    
+    </ul>
       </div>
       </div>
-    </div>
   </div>
 </section>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-  var fadeComplete = function(e) { stage.appendChild(arr[0]); };
-  var stage = document.getElementById("slider");
-  var arr = stage.getElementsByTagName("a");
-  for(var i=0; i < arr.length; i++) {
-    arr[i].addEventListener("animationend", fadeComplete, false);
-
-  }
-
-}, false);
-</script>
-
 
        <!--Footer-->
        <footer class="page-footer">

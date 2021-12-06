@@ -202,36 +202,3 @@
     50%{opacity: .5;}
     100%{opacity: 1;}
 }
-
-
-#slider {
-    margin:auto;
-    width: auto;
-    height: 800px;
-    margin-top:20px;
-}
-#slider a img {
-    padding: 10px;
-    border: 1px solid black ;
-    background: rgb(87, 7, 7); 
-    width: 800px;
-    height: 400px;
-}
-#slider a:nth-of-type(1) {
-    animation-name: fader;
-    animation-delay: 4s;
-    animation-duration: 2s ;
-    z-index:20;
-}
-#slider a:nth-of-type(2) {
-    z-index:10;
-}
-
-#slider a:nth-of-type(n+3) {
-    display: none;
-}
-
-@keyframes fader {
-    from {opacity: 1.0;}
-    to {opacity: 0.0;}
-}
